@@ -20,7 +20,7 @@
 
 [FD.BL33_AP_EFI]
 
-BaseAddress   = 0x00000000|gArmTokenSpaceGuid.PcdFdBaseAddress
+BaseAddress   = 0x90000000|gArmTokenSpaceGuid.PcdFdBaseAddress
 Size          = 0x00200000|gArmTokenSpaceGuid.PcdFdSize
 ErasePolarity = 1
 

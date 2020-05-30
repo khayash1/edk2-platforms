@@ -83,6 +83,22 @@
 ################################################################################
 [PcdsFixedAtBuild.common]
 
+  # UEFI memory (64MB)
+  gArmPlatformTokenSpaceGuid.PcdSystemMemoryUefiRegionSize|0x04000000
+
+  # 0x90000000 - 0x901F0000  FD (PcdFdBaseAddress, PcdFdSize)
+  # 0x901F0000 - 0x90200000 DTB (PcdFdtBaseAddress, PcdFdtSize)
+  # 0x90200000 - 0x90400000 TFA (BL2 / BL31 / BL32 "secure SRAM")
+  # 0x90400000 - ...        RAM (PcdSystemMemoryBase, PcdSystemMemorySize)
+  #
+  gArmTokenSpaceGuid.PcdSystemMemoryBase|0x90400000
+  gArmTokenSpaceGuid.PcdSystemMemorySize|0x0fc00000
+
+  # CPU
+  gArmPlatformTokenSpaceGuid.PcdCoreCount|4
+  gArmPlatformTokenSpaceGuid.PcdCPUCorePrimaryStackSize|0x4000
+  gArmTokenSpaceGuid.PcdVFPEnabled|1
+
   # UARTs
   gEfiMdeModulePkgTokenSpaceGuid.PcdSerialUseMmio|TRUE
   gEfiMdeModulePkgTokenSpaceGuid.PcdSerialRegisterBase|0x54006800
