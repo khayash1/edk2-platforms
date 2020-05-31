@@ -94,6 +94,30 @@ READ_LOCK_STATUS   = TRUE
   INF ArmPkg/Drivers/ArmGic/ArmGicDxe.inf
   INF ArmPkg/Drivers/TimerDxe/TimerDxe.inf
 
+  # Security
+  INF MdeModulePkg/Universal/SecurityStubDxe/SecurityStubDxe.inf
+  # Metronome
+  INF EmbeddedPkg/MetronomeDxe/MetronomeDxe.inf
+  # Watchdog Timer
+  INF MdeModulePkg/Universal/WatchdogTimerDxe/WatchdogTimer.inf
+  # Runtime
+  INF MdeModulePkg/Core/RuntimeDxe/RuntimeDxe.inf
+  # Variable/Variable Write
+  INF MdeModulePkg/Universal/Variable/RuntimeDxe/VariableRuntimeDxe.inf
+  # Capsule
+  INF MdeModulePkg/Universal/CapsuleRuntimeDxe/CapsuleRuntimeDxe.inf
+  # Monotonic
+  INF EmbeddedPkg/EmbeddedMonotonicCounter/EmbeddedMonotonicCounter.inf
+  # Reset
+  INF EmbeddedPkg/ResetRuntimeDxe/ResetRuntimeDxe.inf
+  # RealTimeClock
+  INF EmbeddedPkg/RealTimeClockRuntimeDxe/RealTimeClockRuntimeDxe.inf
+
+  #
+  # Bds
+  #
+  INF MdeModulePkg/Universal/BdsDxe/BdsDxe.inf
+
 [FV.FVMAIN_COMPACT]
 FvAlignment        = 16
 ERASE_POLARITY     = 1
