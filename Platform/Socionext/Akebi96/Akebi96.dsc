@@ -229,6 +229,9 @@
   gEfiMdeModulePkgTokenSpaceGuid.PcdSerialUseHardwareFlowControl|FALSE
   gEfiMdePkgTokenSpaceGuid.PcdUartDefaultBaudRate|115200
 
+  # Terminal
+  gEfiMdePkgTokenSpaceGuid.PcdDefaultTerminalType|4
+
   # debug
   # DEBUG_ASSERT_ENABLED       0x01
   # DEBUG_PRINT_ENABLED        0x02
