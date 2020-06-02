@@ -118,6 +118,7 @@ READ_LOCK_STATUS   = TRUE
   #
   INF MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe.inf
   INF MdeModulePkg/Universal/BdsDxe/BdsDxe.inf
+  INF MdeModulePkg/Application/UiApp/UiApp.inf
 
 [FV.FVMAIN_COMPACT]
 FvAlignment        = 16
