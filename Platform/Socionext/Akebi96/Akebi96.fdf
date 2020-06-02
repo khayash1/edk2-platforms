@@ -116,6 +116,7 @@ READ_LOCK_STATUS   = TRUE
   #
   # Bds
   #
+  INF MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe.inf
   INF MdeModulePkg/Universal/BdsDxe/BdsDxe.inf
 
 [FV.FVMAIN_COMPACT]

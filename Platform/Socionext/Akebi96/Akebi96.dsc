@@ -311,4 +311,5 @@
   #
   # Bds
   #
+  MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe.inf
   MdeModulePkg/Universal/BdsDxe/BdsDxe.inf
