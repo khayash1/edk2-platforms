@@ -150,6 +150,9 @@
   # for UefiHiiLib.inf
   UefiHiiServicesLib|MdeModulePkg/Library/UefiHiiServicesLib/UefiHiiServicesLib.inf
 
+  # for DisplayEngineDxe.inf
+  CustomizedDisplayLib|MdeModulePkg/Library/CustomizedDisplayLib/CustomizedDisplayLib.inf
+
   # (for build)
   HobLib|MdePkg/Library/DxeHobLib/DxeHobLib.inf
 
@@ -208,6 +211,13 @@
   # for UefiBootManagerLib.inf
   DxeServicesLib|MdePkg/Library/DxeServicesLib/DxeServicesLib.inf
   SortLib|MdeModulePkg/Library/UefiSortLib/UefiSortLib.inf
+
+  # for Shell.inf
+  ShellCommandLib|ShellPkg/Library/UefiShellCommandLib/UefiShellCommandLib.inf
+  FileHandleLib|MdePkg/Library/UefiFileHandleLib/UefiFileHandleLib.inf
+  HandleParsingLib|ShellPkg/Library/UefiHandleParsingLib/UefiHandleParsingLib.inf
+  # for UefiShellCommandLib.inf
+  ShellLib|ShellPkg/Library/UefiShellLib/UefiShellLib.inf
 
   # (for build)
   MemoryAllocationLib|MdePkg/Library/UefiMemoryAllocationLib/UefiMemoryAllocationLib.inf
@@ -372,5 +382,12 @@
   # Bds
   #
   MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe.inf
+  MdeModulePkg/Universal/SetupBrowserDxe/SetupBrowserDxe.inf
+  MdeModulePkg/Universal/DisplayEngineDxe/DisplayEngineDxe.inf
   MdeModulePkg/Universal/BdsDxe/BdsDxe.inf
   MdeModulePkg/Application/UiApp/UiApp.inf
+
+  #
+  # UEFI application (Shell Embedded Boot Loader)
+  #
+  ShellPkg/Application/Shell/Shell.inf
