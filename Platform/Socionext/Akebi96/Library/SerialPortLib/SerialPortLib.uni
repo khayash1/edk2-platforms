@@ -1,0 +1,17 @@
+// /** @file
+// SerialPortLib instance for UniPhier UART.
+//
+// SerialPortLib instance for UniPhier UART.
+//
+// Copyright (c) 2006 - 2018, Intel Corporation. All rights reserved.<BR>
+// Copyright (c) 2020, Socionext Inc. All rights reserved.<BR>
+//
+// SPDX-License-Identifier: BSD-2-Clause-Patent
+//
+// **/
+
+
+#string STR_MODULE_ABSTRACT             #language en-US "SerialPortLib instance for UniPhier UART"
+
+#string STR_MODULE_DESCRIPTION          #language en-US "SerialPortLib instance for UniPhier UART."
+

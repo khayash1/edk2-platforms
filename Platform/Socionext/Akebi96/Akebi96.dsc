@@ -31,7 +31,7 @@
   ArmLib|ArmPkg/Library/ArmLib/ArmBaseLib.inf
   IoLib|MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsic.inf
   TimerLib|ArmPkg/Library/ArmArchTimerLib/ArmArchTimerLib.inf
-  SerialPortLib|MdeModulePkg/Library/BaseSerialPortLib16550/BaseSerialPortLib16550.inf
+  SerialPortLib|Platform/Socionext/Akebi96/Library/SerialPortLib/SerialPortLib.inf
   ExtractGuidedSectionLib|EmbeddedPkg/Library/PrePiExtractGuidedSectionLib/PrePiExtractGuidedSectionLib.inf
   LzmaDecompressLib|MdeModulePkg/Library/LzmaCustomDecompressLib/LzmaCustomDecompressLib.inf
   PrePiLib|EmbeddedPkg/Library/PrePiLib/PrePiLib.inf
@@ -264,11 +264,9 @@
   gArmTokenSpaceGuid.PcdGicRedistributorsBase|0x5fe80000
 
   # UARTs
-  gEfiMdeModulePkgTokenSpaceGuid.PcdSerialUseMmio|TRUE
   gEfiMdeModulePkgTokenSpaceGuid.PcdSerialRegisterBase|0x54006800
-  gEfiMdeModulePkgTokenSpaceGuid.PcdSerialRegisterAccessWidth|8
-  gEfiMdeModulePkgTokenSpaceGuid.PcdSerialRegisterStride|4
   gEfiMdeModulePkgTokenSpaceGuid.PcdSerialClockRate|58823529
+  gEfiMdeModulePkgTokenSpaceGuid.PcdSerialFifoControl|0x1
   gEfiMdeModulePkgTokenSpaceGuid.PcdSerialUseHardwareFlowControl|FALSE
   gEfiMdePkgTokenSpaceGuid.PcdUartDefaultBaudRate|115200
 
