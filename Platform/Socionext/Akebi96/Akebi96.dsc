@@ -27,7 +27,7 @@
   ArmLib|ArmPkg/Library/ArmLib/ArmBaseLib.inf
   IoLib|MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsic.inf
   TimerLib|MdePkg/Library/BaseTimerLibNullTemplate/BaseTimerLibNullTemplate.inf
-  SerialPortLib|MdePkg/Library/BaseSerialPortLibNull/BaseSerialPortLibNull.inf
+  SerialPortLib|MdeModulePkg/Library/BaseSerialPortLib16550/BaseSerialPortLib16550.inf
   ExtractGuidedSectionLib|EmbeddedPkg/Library/PrePiExtractGuidedSectionLib/PrePiExtractGuidedSectionLib.inf
   LzmaDecompressLib|MdeModulePkg/Library/LzmaCustomDecompressLib/LzmaCustomDecompressLib.inf
   PrePiLib|EmbeddedPkg/Library/PrePiLib/PrePiLib.inf
@@ -58,6 +58,11 @@
   # for BasePeCoffLib.inf
   PeCoffExtraActionLib|ArmPkg/Library/DebugPeCoffExtraActionLib/DebugPeCoffExtraActionLib.inf
 
+  # for BaseSerialPortLib16550.inf
+  PlatformHookLib|MdeModulePkg/Library/BasePlatformHookLibNull/BasePlatformHookLibNull.inf
+  PciLib|MdePkg/Library/BasePciLibPciExpress/BasePciLibPciExpress.inf
+  PciExpressLib|MdePkg/Library/BasePciExpressLib/BasePciExpressLib.inf
+
   # for ArmArchTimerLib.inf
   ArmGenericTimerCounterLib|ArmPkg/Library/ArmGenericTimerPhyCounterLib/ArmGenericTimerPhyCounterLib.inf
 
@@ -70,6 +75,15 @@
 #
 ################################################################################
 [PcdsFixedAtBuild.common]
+
+  # UARTs
+  gEfiMdeModulePkgTokenSpaceGuid.PcdSerialUseMmio|TRUE
+  gEfiMdeModulePkgTokenSpaceGuid.PcdSerialRegisterBase|0x54006800
+  gEfiMdeModulePkgTokenSpaceGuid.PcdSerialRegisterAccessWidth|8
+  gEfiMdeModulePkgTokenSpaceGuid.PcdSerialRegisterStride|4
+  gEfiMdeModulePkgTokenSpaceGuid.PcdSerialClockRate|58823529
+  gEfiMdeModulePkgTokenSpaceGuid.PcdSerialUseHardwareFlowControl|FALSE
+  gEfiMdePkgTokenSpaceGuid.PcdUartDefaultBaudRate|115200
 
 ################################################################################
 #
